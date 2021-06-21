@@ -1,0 +1,6 @@
+framework module Pods_AutoSelfieIOSLibChallenge_Tests {
+  umbrella header "Pods-AutoSelfieIOSLibChallenge_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

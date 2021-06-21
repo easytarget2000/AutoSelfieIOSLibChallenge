@@ -1,0 +1,6 @@
+framework module AutoSelfieIOSLibChallenge {
+  umbrella header "AutoSelfieIOSLibChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
