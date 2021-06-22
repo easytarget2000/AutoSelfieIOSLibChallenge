@@ -46,6 +46,27 @@ public class AutoSelfieSessionView: UIView {
         addOrientationObserver()
     }
     
+    // MARK: - Entry Points
+    
+    /**
+     Starts the camera and continuously feeds the camera frames into a facial recognition system.
+     
+     Same as calling `session.startDetection()`.
+     */
+    public func startDetection() {
+        session.startDetection()
+    }
+    
+    /**
+     Stops the camera and frees its resources. Automatically called when objects of this class are
+     deallocated.
+     
+     Same as calling `session.stopDetection()`.
+     */
+    public func stopDetection() {
+        session.stopDetection()
+    }
+    
     // MARK: - Lifecycle
     
     // MARK: Device Orientation

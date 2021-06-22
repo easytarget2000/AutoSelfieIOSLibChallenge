@@ -4,4 +4,5 @@ public enum AutoSelfieEvent {
     
     case imageCapture(UIImage)
     
+    
 }

@@ -2,11 +2,23 @@ import AVFoundation.AVCaptureSession
 
 typealias Session = AutoSelfieSession
 
+/**
+ Handles the IO of retrieving the exercise configuration files, captures the camera output, forwards camera
+ frame to the internal detection logic and informs the caller of detection results.
+ */
 public class AutoSelfieSession {
     
     // MARK: - Values
     
+    /**
+     */
     public var eventHandler: ((AutoSelfieEvent) -> ())?
+    
+    /**
+     See `eventHandler`. The queue on which the callback closure will be called synchronously.
+     Default: main queue.
+     */
+    public var eventHandlerQueue = DispatchQueue.main
     
     public var cameraCaptureSession: AVCaptureSession?
     
@@ -37,10 +49,17 @@ public class AutoSelfieSession {
     
     // MARK: - Entry Points
     
+    /**
+     Starts the camera and continuously feeds the camera frames into a facial recognition system.
+     */
     public func startDetection() {
         startImageSource()
     }
     
+    /**
+     Stops the camera and frees its resources. Automatically called when objects of this class are
+     deallocated.
+     */
     public func stopDetection() {
         stopImageSource()
     }
