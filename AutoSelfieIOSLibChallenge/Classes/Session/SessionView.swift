@@ -11,18 +11,17 @@ typealias SessionView = AutoSelfieSessionView
 
 public class AutoSelfieSessionView: UIView {
     
-    // MARK: - Sessions
+    // MARK: - Values
     
     public let session = AutoSelfieSession()
     
+    public override class var layerClass: AnyClass {
+        AVCaptureVideoPreviewLayer.self
+    }
+    
     var previewLayer: AVCaptureVideoPreviewLayer {
-        guard let layer = layer as? AVCaptureVideoPreviewLayer else {
-            fatalError(
-                "Expected `AVCaptureVideoPreviewLayer` type for layer.Check " +
-                    "PreviewView.layerClass implementation."
-            )
-        }
-        return layer
+        // As requested by `layerClass` override.
+        layer as! AVCaptureVideoPreviewLayer
     }
     
     // MARK: - Init
@@ -47,11 +46,7 @@ public class AutoSelfieSessionView: UIView {
         addOrientationObserver()
     }
     
-    // MARK: -
-    
-    public override class var layerClass: AnyClass {
-        return AVCaptureVideoPreviewLayer.self
-    }
+    // MARK: - Lifecycle
     
     // MARK: Device Orientation
     
