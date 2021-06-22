@@ -43,7 +43,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		623CCDF11442EFBE86DC2B11 /* Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Tests/Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Example/Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6FEBB722B382312A35851A91 /* AutoSelfieIOSLibChallenge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AutoSelfieIOSLibChallenge.podspec; path = ../AutoSelfieIOSLibChallenge.podspec; sourceTree = "<group>"; };
 		75600DBCAAC9F735BC5930BF /* Pods-AutoSelfieLibChallenge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Tests/Pods-AutoSelfieLibChallenge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		772145D7D4DEA99C0F2DF52F /* Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Tests/Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A02E3A471389DC4AD1E139E6 /* Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Example/Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				6FEBB722B382312A35851A91 /* AutoSelfieIOSLibChallenge.podspec */,
 				01275A7E89702D3160FF6014 /* README.md */,
 				F74F11F888DD0122A2B981BF /* LICENSE */,
 			);
