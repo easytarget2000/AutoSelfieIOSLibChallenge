@@ -28,6 +28,10 @@ public class AutoSelfieSession {
     
     // MARK: - Init
     
+    /**
+     Use this default public initializer as the entry point to the library if you do not wish to use
+     `SessionView`.
+     */
     public convenience init() {
         self.init(
             imageSource: CameraImageSource(),
