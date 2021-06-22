@@ -1,17 +1,8 @@
 PODS:
   - AutoSelfieIOSLibChallenge (0.1.0)
-  - Nimble (9.0.1)
-  - Quick (2.2.1)
 
 DEPENDENCIES:
   - AutoSelfieIOSLibChallenge (from `../`)
-  - Nimble (~> 9.0.1)
-  - Quick (~> 2.2.0)
-
-SPEC REPOS:
-  trunk:
-    - Nimble
-    - Quick
 
 EXTERNAL SOURCES:
   AutoSelfieIOSLibChallenge:
@@ -19,9 +10,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AutoSelfieIOSLibChallenge: bc97819b5512508af8b069022bf14d54aa5d5a08
-  Nimble: 7bed62ffabd6dbfe05f5925cbc43722533248990
-  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
 
-PODFILE CHECKSUM: 24bae3e6f9c6ee4ad03408090e53ccb721af0334
+PODFILE CHECKSUM: 832da70d5a6cc885c4f24f3eb110b506420444de
 
 COCOAPODS: 1.10.1

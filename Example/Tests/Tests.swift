@@ -1,11 +1,11 @@
-// https://github.com/Quick/Quick
 
-import Quick
-import Nimble
-import AutoSelfieIOSLibChallenge
+@testable import AutoSelfieIOSLibChallenge
+import XCTest
 
-class TableOfContentsSpec: QuickSpec {
-    override func spec() {
+class PlaceholderTests: XCTestCase {
+    
+    func testThat_TestsAreRun() {
         
     }
+    
 }
