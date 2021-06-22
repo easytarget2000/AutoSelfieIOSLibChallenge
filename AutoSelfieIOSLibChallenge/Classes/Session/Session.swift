@@ -1,3 +1,5 @@
+import AVFoundation.AVCaptureSession
+
 typealias Session = AutoSelfieSession
 
 public class AutoSelfieSession {
@@ -5,6 +7,8 @@ public class AutoSelfieSession {
     // MARK: - Values
     
     public var eventHandler: ((AutoSelfieEvent) -> ())?
+    
+    public var cameraCaptureSession: AVCaptureSession?
     
     private let imageSource: ImageSource
     

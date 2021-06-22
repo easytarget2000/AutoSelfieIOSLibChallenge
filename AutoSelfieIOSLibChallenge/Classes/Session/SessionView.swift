@@ -43,7 +43,7 @@ public class AutoSelfieSessionView: UIView {
     
     private func setup() {
         previewLayer.videoGravity = .resizeAspectFill
-//        previewLayer.session = session.cameraCaptureSession
+        previewLayer.session = session.cameraCaptureSession
         addOrientationObserver()
     }
     
