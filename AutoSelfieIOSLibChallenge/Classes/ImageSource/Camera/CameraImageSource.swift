@@ -55,38 +55,32 @@ final class CameraImageSource: NSObject, ImageSource {
         
     private var frameHandler: ((Result<CMSampleBuffer, Swift.Error>) -> ())?
     
-    private let captureSession: AVCaptureSession
+    let captureSession: AVCaptureSession
     
-    private let captureSessionQueue: DispatchQueue
+    let captureSessionQueue: DispatchQueue
     
-    private let captureOutputQueue: DispatchQueue
-    
-    private let frameHandlerQueue: DispatchQueue
-    
+    let captureOutputQueue: DispatchQueue
+        
     // MARK: - Init
     
     override convenience init() {
-        let captureSession = AVCaptureSession()
         self.init(
-            captureSession: captureSession,
+            captureSession: AVCaptureSession(),
             captureSessionQueue:
                 DispatchQueue(label: Constant.sessionQueueLabel),
             captureOutputQueue:
-                DispatchQueue(label: Constant.videoDataOutputQueueLabel),
-            frameHandlerQueue: DispatchQueue.global(qos: .userInteractive)
+                DispatchQueue(label: Constant.videoDataOutputQueueLabel)
         )
     }
     
     init(
         captureSession: AVCaptureSession,
         captureSessionQueue: DispatchQueue,
-        captureOutputQueue: DispatchQueue,
-        frameHandlerQueue: DispatchQueue
+        captureOutputQueue: DispatchQueue
     ) {
         self.captureSession = captureSession
         self.captureSessionQueue = captureSessionQueue
         self.captureOutputQueue = captureOutputQueue
-        self.frameHandlerQueue = frameHandlerQueue
     }
             
     // MARK: - Entry Points
@@ -235,16 +229,6 @@ extension CameraImageSource: AVCaptureVideoDataOutputSampleBufferDelegate {
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
-        handleAsync(sampleBuffer)
-    }
-    
-    private func handleAsync(_ sampleBuffer: CMSampleBuffer) {
-        frameHandlerQueue.async {
-            self.handle(sampleBuffer)
-        }
-    }
-        
-    private func handle(_ sampleBuffer: CMSampleBuffer) {
         frameHandler?(.success(sampleBuffer))
     }
     
