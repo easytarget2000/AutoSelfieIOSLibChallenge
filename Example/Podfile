@@ -2,10 +2,10 @@ use_frameworks!
 
 platform :ios, '14.5'
 
-target 'AutoSelfieIOSLibChallenge_Example' do
-  pod 'AutoSelfieIOSLibChallenge', :path => '../'
+target 'AutoSelfieLibChallenge_Example' do
+  pod 'AutoSelfieLibChallenge', :path => '../'
 
-  target 'AutoSelfieIOSLibChallenge_Tests' do
+  target 'AutoSelfieLibChallenge_Tests' do
     inherit! :search_paths
   end
   

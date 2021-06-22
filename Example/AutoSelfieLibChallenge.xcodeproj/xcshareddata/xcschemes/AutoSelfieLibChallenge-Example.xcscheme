@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "AutoSelfieIOSLibChallenge_Example.app"
-               BlueprintName = "AutoSelfieIOSLibChallenge_Example"
-               ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+               BuildableName = "AutoSelfieLibChallenge_Example.app"
+               BlueprintName = "AutoSelfieLibChallenge_Example"
+               ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AutoSelfieIOSLibChallenge_Tests.xctest"
-               BlueprintName = "AutoSelfieIOSLibChallenge_Tests"
-               ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+               BuildableName = "AutoSelfieLibChallenge_Tests.xctest"
+               BlueprintName = "AutoSelfieLibChallenge_Tests"
+               ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AutoSelfieIOSLibChallenge_Example.app"
-            BlueprintName = "AutoSelfieIOSLibChallenge_Example"
-            ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+            BuildableName = "AutoSelfieLibChallenge_Example.app"
+            BlueprintName = "AutoSelfieLibChallenge_Example"
+            ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -56,9 +56,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AutoSelfieIOSLibChallenge_Tests.xctest"
-               BlueprintName = "AutoSelfieIOSLibChallenge_Tests"
-               ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+               BuildableName = "AutoSelfieLibChallenge_Tests.xctest"
+               BlueprintName = "AutoSelfieLibChallenge_Tests"
+               ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -78,9 +78,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AutoSelfieIOSLibChallenge_Example.app"
-            BlueprintName = "AutoSelfieIOSLibChallenge_Example"
-            ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+            BuildableName = "AutoSelfieLibChallenge_Example.app"
+            BlueprintName = "AutoSelfieLibChallenge_Example"
+            ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AutoSelfieIOSLibChallenge_Example.app"
-            BlueprintName = "AutoSelfieIOSLibChallenge_Example"
-            ReferencedContainer = "container:AutoSelfieIOSLibChallenge.xcodeproj">
+            BuildableName = "AutoSelfieLibChallenge_Example.app"
+            BlueprintName = "AutoSelfieLibChallenge_Example"
+            ReferencedContainer = "container:AutoSelfieLibChallenge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

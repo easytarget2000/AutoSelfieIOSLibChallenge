@@ -1,4 +1,4 @@
-@testable import AutoSelfieIOSLibChallenge
+@testable import AutoSelfieLibChallenge
 import XCTest
 
 class PlaceholderTests: XCTestCase {

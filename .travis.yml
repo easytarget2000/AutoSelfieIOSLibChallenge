@@ -7,5 +7,5 @@ before_install:
   - bundle install
   - pod install --project-directory=Example
 script:
-  - fastlane ios test
+  - bundle exec fastlane ios test
   - pod lib lint --allow-warnings

@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'AutoSelfieIOSLibChallenge'
+  s.name = 'AutoSelfieLibChallenge'
   s.version = '0.1.0'
   s.summary = 'Auto Selfie - iOS Library Coding Challenge'
 
@@ -15,7 +15,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '14.5'
   s.swift_versions = '5'
 
-  s.source_files = 'AutoSelfieIOSLibChallenge/Classes/**/*'
+  s.source_files = 'AutoSelfieLibChallenge/Classes/**/*'
   
   s.frameworks = 'AVFoundation', 'Foundation'#, 'MLKitPoseDetectionCommon'
   # s.dependency 'GoogleMLKit/PoseDetectionAccurate', '2.0.0'

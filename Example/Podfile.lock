@@ -1,16 +1,16 @@
 PODS:
-  - AutoSelfieIOSLibChallenge (0.1.0)
+  - AutoSelfieLibChallenge (0.1.0)
 
 DEPENDENCIES:
-  - AutoSelfieIOSLibChallenge (from `../`)
+  - AutoSelfieLibChallenge (from `../`)
 
 EXTERNAL SOURCES:
-  AutoSelfieIOSLibChallenge:
+  AutoSelfieLibChallenge:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AutoSelfieIOSLibChallenge: 88dba052aebf5d5d0d5ff71d0b00639a60a70d51
+  AutoSelfieLibChallenge: 0f24100528a490d7ca2015ef96f47fadcbfd5c3b
 
-PODFILE CHECKSUM: 982859141e5d873f71e786faaf1e9fe7b1604bfb
+PODFILE CHECKSUM: 46763a5992aeaf3e70a7252b7efe8c4956e29ee1
 
 COCOAPODS: 1.10.1

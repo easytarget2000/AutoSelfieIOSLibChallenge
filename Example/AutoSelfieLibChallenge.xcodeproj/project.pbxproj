@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F89E1480B44CF296F9EDFA1 /* Pods_AutoSelfieIOSLibChallenge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8D577CB14C83C0DA458D8B /* Pods_AutoSelfieIOSLibChallenge_Tests.framework */; };
+		21BE70697BB676D68AFDE5B7 /* Pods_AutoSelfieLibChallenge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D675256177B28E9D1E004 /* Pods_AutoSelfieLibChallenge_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		DBFB4289162269FD7C742C4A /* Pods_AutoSelfieIOSLibChallenge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1828CA56D7A02FA6C3687275 /* Pods_AutoSelfieIOSLibChallenge_Example.framework */; };
+		8316048EB8668EA0F9EC3E79 /* Pods_AutoSelfieLibChallenge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8058C8BA94F49CF1CC1F2 /* Pods_AutoSelfieLibChallenge_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,24 +29,28 @@
 
 /* Begin PBXFileReference section */
 		01275A7E89702D3160FF6014 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		0D8D577CB14C83C0DA458D8B /* Pods_AutoSelfieIOSLibChallenge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSelfieIOSLibChallenge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1828CA56D7A02FA6C3687275 /* Pods_AutoSelfieIOSLibChallenge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSelfieIOSLibChallenge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2D675256177B28E9D1E004 /* Pods_AutoSelfieLibChallenge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSelfieLibChallenge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F79722CDD584D871C9880D /* Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Example/Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSelfieIOSLibChallenge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* AutoSelfieLibChallenge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSelfieLibChallenge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSelfieIOSLibChallenge_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* AutoSelfieLibChallenge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSelfieLibChallenge_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		623CCDF11442EFBE86DC2B11 /* Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Tests/Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Example/Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6FEBB722B382312A35851A91 /* AutoSelfieIOSLibChallenge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AutoSelfieIOSLibChallenge.podspec; path = ../AutoSelfieIOSLibChallenge.podspec; sourceTree = "<group>"; };
+		75600DBCAAC9F735BC5930BF /* Pods-AutoSelfieLibChallenge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Tests/Pods-AutoSelfieLibChallenge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		772145D7D4DEA99C0F2DF52F /* Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Tests/Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A02E3A471389DC4AD1E139E6 /* Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Example/Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB8058C8BA94F49CF1CC1F2 /* Pods_AutoSelfieLibChallenge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSelfieLibChallenge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66D6B651365AEC977BCB2F8 /* Pods-AutoSelfieLibChallenge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Example.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Example/Pods-AutoSelfieLibChallenge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F74F11F888DD0122A2B981BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F7E80E8B6EE17E63C2D85D7F /* Pods-AutoSelfieLibChallenge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Tests/Pods-AutoSelfieLibChallenge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFB4289162269FD7C742C4A /* Pods_AutoSelfieIOSLibChallenge_Example.framework in Frameworks */,
+				8316048EB8668EA0F9EC3E79 /* Pods_AutoSelfieLibChallenge_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F89E1480B44CF296F9EDFA1 /* Pods_AutoSelfieIOSLibChallenge_Tests.framework in Frameworks */,
+				21BE70697BB676D68AFDE5B7 /* Pods_AutoSelfieLibChallenge_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for AutoSelfieIOSLibChallenge */,
+				607FACD21AFB9204008FA782 /* Example for AutoSelfieLibChallenge */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D32ED6B79EFFB9A7F9F70151 /* Pods */,
@@ -84,13 +88,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example.app */,
-				607FACE51AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* AutoSelfieLibChallenge_Example.app */,
+				607FACE51AFB9204008FA782 /* AutoSelfieLibChallenge_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for AutoSelfieIOSLibChallenge */ = {
+		607FACD21AFB9204008FA782 /* Example for AutoSelfieLibChallenge */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -100,7 +104,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for AutoSelfieIOSLibChallenge";
+			name = "Example for AutoSelfieLibChallenge";
 			path = AutoSelfieIOSLibChallenge;
 			sourceTree = "<group>";
 		};
@@ -142,8 +146,8 @@
 		AA3318EA3A4FAAFBAF46D9DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1828CA56D7A02FA6C3687275 /* Pods_AutoSelfieIOSLibChallenge_Example.framework */,
-				0D8D577CB14C83C0DA458D8B /* Pods_AutoSelfieIOSLibChallenge_Tests.framework */,
+				CAB8058C8BA94F49CF1CC1F2 /* Pods_AutoSelfieLibChallenge_Example.framework */,
+				0B2D675256177B28E9D1E004 /* Pods_AutoSelfieLibChallenge_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +159,10 @@
 				50F79722CDD584D871C9880D /* Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig */,
 				772145D7D4DEA99C0F2DF52F /* Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig */,
 				623CCDF11442EFBE86DC2B11 /* Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig */,
+				D66D6B651365AEC977BCB2F8 /* Pods-AutoSelfieLibChallenge_Example.debug.xcconfig */,
+				6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */,
+				F7E80E8B6EE17E63C2D85D7F /* Pods-AutoSelfieLibChallenge_Tests.debug.xcconfig */,
+				75600DBCAAC9F735BC5930BF /* Pods-AutoSelfieLibChallenge_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -162,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example */ = {
+		607FACCF1AFB9204008FA782 /* AutoSelfieLibChallenge_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieIOSLibChallenge_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieLibChallenge_Example" */;
 			buildPhases = (
 				2AD5D19AC3A3AD2554E67ECA /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -175,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = AutoSelfieIOSLibChallenge_Example;
+			name = AutoSelfieLibChallenge_Example;
 			productName = AutoSelfieIOSLibChallenge;
-			productReference = 607FACD01AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* AutoSelfieLibChallenge_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Tests */ = {
+		607FACE41AFB9204008FA782 /* AutoSelfieLibChallenge_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieIOSLibChallenge_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieLibChallenge_Tests" */;
 			buildPhases = (
 				4FCB5FE72404C559592CD3C0 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -194,9 +202,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = AutoSelfieIOSLibChallenge_Tests;
+			name = AutoSelfieLibChallenge_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* AutoSelfieLibChallenge_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AutoSelfieIOSLibChallenge" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AutoSelfieLibChallenge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,8 +242,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example */,
-				607FACE41AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Tests */,
+				607FACCF1AFB9204008FA782 /* AutoSelfieLibChallenge_Example */,
+				607FACE41AFB9204008FA782 /* AutoSelfieLibChallenge_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,7 +284,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutoSelfieIOSLibChallenge_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AutoSelfieLibChallenge_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -298,7 +306,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutoSelfieIOSLibChallenge_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AutoSelfieLibChallenge_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,7 +338,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AutoSelfieIOSLibChallenge_Example */;
+			target = 607FACCF1AFB9204008FA782 /* AutoSelfieLibChallenge_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -456,7 +464,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A02E3A471389DC4AD1E139E6 /* Pods-AutoSelfieIOSLibChallenge_Example.debug.xcconfig */;
+			baseConfigurationReference = D66D6B651365AEC977BCB2F8 /* Pods-AutoSelfieLibChallenge_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoSelfieIOSLibChallenge/Info.plist;
@@ -472,7 +480,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50F79722CDD584D871C9880D /* Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig */;
+			baseConfigurationReference = 6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoSelfieIOSLibChallenge/Info.plist;
@@ -488,7 +496,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 772145D7D4DEA99C0F2DF52F /* Pods-AutoSelfieIOSLibChallenge_Tests.debug.xcconfig */;
+			baseConfigurationReference = F7E80E8B6EE17E63C2D85D7F /* Pods-AutoSelfieLibChallenge_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -505,13 +513,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoSelfieIOSLibChallenge_Example.app/AutoSelfieIOSLibChallenge_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoSelfieLibChallenge_Example.app/AutoSelfieLibChallenge_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 623CCDF11442EFBE86DC2B11 /* Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig */;
+			baseConfigurationReference = 75600DBCAAC9F735BC5930BF /* Pods-AutoSelfieLibChallenge_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -524,14 +532,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoSelfieIOSLibChallenge_Example.app/AutoSelfieIOSLibChallenge_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoSelfieLibChallenge_Example.app/AutoSelfieLibChallenge_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AutoSelfieIOSLibChallenge" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AutoSelfieLibChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -540,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieIOSLibChallenge_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieLibChallenge_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -549,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieIOSLibChallenge_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AutoSelfieLibChallenge_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
