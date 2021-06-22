@@ -3,6 +3,7 @@ language: swift
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
+  - gem install bundler:2.2.20
   - bundle install
   - pod install --project-directory=Example
 script:
