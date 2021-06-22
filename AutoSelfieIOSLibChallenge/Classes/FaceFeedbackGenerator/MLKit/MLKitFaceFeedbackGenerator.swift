@@ -1,8 +1,8 @@
-import UIKit.UIImage
+import CoreMedia.CMSampleBuffer
 
 class MLKitFaceFeedbackGenerator: FaceFeedbackGenerator {
     
-    func handle(image: UIImage) {
+    func handle(sampleBuffer: CMSampleBuffer) {
         
     }
     

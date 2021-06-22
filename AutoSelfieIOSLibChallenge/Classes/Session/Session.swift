@@ -48,10 +48,17 @@ public class AutoSelfieSession {
     // MARK: - Implementations
     
     private func startImageSource() {
-        imageSource.startFeed { [weak self] image in
+        imageSource.startFeed { _ in
+            
+        } frameHandler: { [weak self] frameResult in
             guard let self = self else { return }
             
-            self.faceFeedbackGenerator.handle(image: image)
+            switch frameResult {
+            case .success(let sampleBuffer):
+                self.faceFeedbackGenerator.handle(sampleBuffer: sampleBuffer)
+            default:
+                break
+            }
         }
     }
     
