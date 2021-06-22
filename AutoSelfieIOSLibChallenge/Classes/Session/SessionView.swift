@@ -58,7 +58,7 @@ public class AutoSelfieSessionView: UIView {
     private func addOrientationObserver() {
         NotificationCenter.default.addObserver(
             self, selector: #selector(handleDeviceRotation),
-            name: .UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil
         )
     }
@@ -66,7 +66,7 @@ public class AutoSelfieSessionView: UIView {
     private func removeOrientationObserver() {
         NotificationCenter.default.removeObserver(
             self,
-            name: .UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil
         )
     }
