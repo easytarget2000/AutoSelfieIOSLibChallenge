@@ -8,16 +8,23 @@ public class AutoSelfieSession {
     
     private let imageSource: ImageSource
     
+    private let faceFeedbackGenerator: FaceFeedbackGenerator
+    
     // MARK: - Init
     
     public convenience init() {
         self.init(
-            imageSource: CameraImageSource()
+            imageSource: CameraImageSource(),
+            faceFeedbackGenerator: MLKitFaceFeedbackGenerator()
         )
     }
     
-    init(imageSource: ImageSource) {
+    init(
+        imageSource: ImageSource,
+        faceFeedbackGenerator: FaceFeedbackGenerator
+    ) {
         self.imageSource = imageSource
+        self.faceFeedbackGenerator = faceFeedbackGenerator
     }
     
     deinit {
@@ -37,8 +44,10 @@ public class AutoSelfieSession {
     // MARK: - Implementations
     
     private func startImageSource() {
-        imageSource.startFeed { image in
+        imageSource.startFeed { [weak self] image in
+            guard let self = self else { return }
             
+            self.faceFeedbackGenerator.handle(image: image)
         }
     }
     
