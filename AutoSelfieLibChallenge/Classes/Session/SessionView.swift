@@ -15,6 +15,13 @@ public class AutoSelfieSessionView: UIView {
     
     public let session = AutoSelfieSession()
     
+    /**
+     Same as accessing `session.eventHandler`.
+     */
+    public var eventHandler: ((AutoSelfieEvent) -> ())? {
+        session.eventHandler
+    }
+    
     public override class var layerClass: AnyClass {
         AVCaptureVideoPreviewLayer.self
     }
