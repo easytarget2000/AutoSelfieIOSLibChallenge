@@ -3,6 +3,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let wrapperView: AutoSelfieWrapperView
+    
     var body: some View {
         VStack {
             selfieView
@@ -14,20 +16,20 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(wrapperView: AutoSelfieWrapperView())
     }
 }
 
 extension ContentView {
     
-    private var selfieView: AutoSelfieWrapperView {
-        AutoSelfieWrapperView()
+    private var selfieView: some View {
+        wrapperView.padding()
     }
     
     private var startButton: some View {
         Button("Start") {
             requestCameraAccessAndStartDetection()
-        }
+        }.padding()
     }
     
     private func requestCameraAccessAndStartDetection() {
@@ -44,6 +46,6 @@ extension ContentView {
     }
     
     private func startDetection() {
-        selfieView.wrappedView.startDetection()
+        wrapperView.wrappedView.startDetection()
     }
 }
