@@ -1,4 +1,5 @@
 import CoreMedia.CMSampleBuffer
+import MLKitFaceDetection
 
 class MLKitFaceFeedbackGenerator: FaceFeedbackGenerator {
     

@@ -17,8 +17,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'AutoSelfieLibChallenge/Classes/**/*'
   
-  s.frameworks = 'AVFoundation', 'Foundation'#, 'MLKitPoseDetectionCommon'
-  # s.dependency 'GoogleMLKit/PoseDetectionAccurate', '2.0.0'
+  s.frameworks = 'AVFoundation', 'Foundation', 'MLKitFaceDetection'
+  s.dependency 'GoogleMLKit/FaceDetection', '2.1.0'
   s.static_framework = true
 
 end
