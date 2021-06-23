@@ -11,6 +11,14 @@ typealias SessionView = AutoSelfieSessionView
 
 public class AutoSelfieSessionView: UIView {
     
+    // MARK: - Children Types
+    
+    private enum Constant {
+        
+        static let backgroundColor = UIColor.black
+        
+    }
+    
     // MARK: - Values
     
     public let session = AutoSelfieSession()
@@ -48,6 +56,7 @@ public class AutoSelfieSessionView: UIView {
     }
     
     private func setup() {
+        backgroundColor = Constant.backgroundColor
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.session = session.cameraCaptureSession
         addOrientationObserver()
