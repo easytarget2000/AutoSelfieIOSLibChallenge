@@ -71,22 +71,29 @@ public class AutoSelfieSession {
     // MARK: - Implementations
     
     private func startImageSource() {
-        imageSource.startFeed { _ in
-            
-        } frameHandler: { [weak self] frameResult in
-            guard let self = self else { return }
-            
-            switch frameResult {
-            case .success(let sampleBuffer):
-                self.faceFeedbackGenerator.handle(sampleBuffer: sampleBuffer)
+        imageSource.startFeed { startResult in
+            switch startResult {
+            case .failure(let error):
+                Self.logError("startImageSource(): startResult: \(error)")
             default:
                 break
+            }
+        } frameHandler: { [weak self] frameResult in
+            switch frameResult {
+            case .success(let sampleBuffer):
+                self?.faceFeedbackGenerator.handle(sampleBuffer: sampleBuffer)
+            case .failure(let error):
+                Self.logError("startImageSource(): frameResult: \(error)")
             }
         }
     }
     
     private func stopImageSource() {
         imageSource.stopFeed()
+    }
+    
+    private static func logError(_ message: String) {
+        NSLog("ERROR: Session: \(message)")
     }
     
 }

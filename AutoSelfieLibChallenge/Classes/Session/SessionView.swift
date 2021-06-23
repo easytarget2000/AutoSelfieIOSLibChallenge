@@ -57,8 +57,6 @@ public class AutoSelfieSessionView: UIView {
     
     private func setup() {
         backgroundColor = Constant.backgroundColor
-        previewLayer.videoGravity = .resizeAspectFill
-        previewLayer.session = session.cameraCaptureSession
         addOrientationObserver()
     }
     
@@ -66,11 +64,12 @@ public class AutoSelfieSessionView: UIView {
     
     /**
      Starts the camera and continuously feeds the camera frames into a facial recognition system.
-     
-     Same as calling `session.startDetection()`.
+     Calls `session.startDetection()` and configures this UIView's CALayer for the camera feed.
      */
     public func startDetection() {
         session.startDetection()
+        previewLayer.videoGravity = .resizeAspectFill
+        previewLayer.session = session.cameraCaptureSession
     }
     
     /**
