@@ -20,7 +20,9 @@ public class AutoSelfieSession {
      */
     public var eventHandlerQueue = DispatchQueue.main
     
-    public var cameraCaptureSession: AVCaptureSession?
+    public var cameraCaptureSession: AVCaptureSession? {
+        (imageSource as? CameraImageSource)?.captureSession
+    }
     
     private let imageSource: ImageSource
     
