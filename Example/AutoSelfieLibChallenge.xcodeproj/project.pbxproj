@@ -10,6 +10,7 @@
 		21BE70697BB676D68AFDE5B7 /* Pods_AutoSelfieLibChallenge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D675256177B28E9D1E004 /* Pods_AutoSelfieLibChallenge_Tests.framework */; };
 		302443EF26839A32004B5467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302443ED26839A32004B5467 /* ContentView.swift */; };
 		302443F026839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302443EE26839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift */; };
+		3024442926839C47004B5467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024442826839C47004B5467 /* Assets.xcassets */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8316048EB8668EA0F9EC3E79 /* Pods_AutoSelfieLibChallenge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8058C8BA94F49CF1CC1F2 /* Pods_AutoSelfieLibChallenge_Example.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		0B2D675256177B28E9D1E004 /* Pods_AutoSelfieLibChallenge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoSelfieLibChallenge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		302443ED26839A32004B5467 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		302443EE26839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSelfieLibChallengeDemoApp.swift; sourceTree = "<group>"; };
+		3024442826839C47004B5467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F79722CDD584D871C9880D /* Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Example/Pods-AutoSelfieIOSLibChallenge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AutoSelfieLibChallenge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSelfieLibChallenge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				302443ED26839A32004B5467 /* ContentView.swift */,
 				302443EE26839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift */,
+				3024442826839C47004B5467 /* Assets.xcassets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for AutoSelfieLibChallenge";
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3024442926839C47004B5467 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

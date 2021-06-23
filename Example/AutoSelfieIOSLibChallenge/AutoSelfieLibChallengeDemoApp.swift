@@ -8,4 +8,5 @@ struct AutoSelfieLibChallengeDemoApp: App {
             ContentView()
         }
     }
+    
 }
