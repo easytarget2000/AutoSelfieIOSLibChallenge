@@ -32,6 +32,7 @@ extension ContentView {
         }.padding()
     }
     
+    // Raised issue #9.
     private func requestCameraAccessAndStartDetection() {
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else {
