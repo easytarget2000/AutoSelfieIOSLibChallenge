@@ -222,6 +222,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4942X8FYB7;
 						LastSwiftMigration = 1250;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -450,6 +451,7 @@
 			baseConfigurationReference = D66D6B651365AEC977BCB2F8 /* Pods-AutoSelfieLibChallenge_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4942X8FYB7;
 				INFOPLIST_FILE = AutoSelfieIOSLibChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,6 +468,7 @@
 			baseConfigurationReference = 6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4942X8FYB7;
 				INFOPLIST_FILE = AutoSelfieIOSLibChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
