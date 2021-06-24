@@ -11,7 +11,7 @@
 		302443F026839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302443EE26839A32004B5467 /* AutoSelfieLibChallengeDemoApp.swift */; };
 		3024442926839C47004B5467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024442826839C47004B5467 /* Assets.xcassets */; };
 		3024446326839E5F004B5467 /* AutoSelfieWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024446226839E5F004B5467 /* AutoSelfieWrapperView.swift */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* RectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* RectTests.swift */; };
 		7F6247DD55C3499B5E7C5229 /* Pods_AutoSelfieLibChallenge_Example_AutoSelfieLibChallenge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA996208F10C0684FCD387B /* Pods_AutoSelfieLibChallenge_Example_AutoSelfieLibChallenge_Tests.framework */; };
 		8316048EB8668EA0F9EC3E79 /* Pods_AutoSelfieLibChallenge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8058C8BA94F49CF1CC1F2 /* Pods_AutoSelfieLibChallenge_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AutoSelfieLibChallenge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSelfieLibChallenge_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* RectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectTests.swift; sourceTree = "<group>"; };
 		623CCDF11442EFBE86DC2B11 /* Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieIOSLibChallenge_Tests/Pods-AutoSelfieIOSLibChallenge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6280C96D53D35DFAD2A98621 /* Pods-AutoSelfieLibChallenge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Example/Pods-AutoSelfieLibChallenge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		65E2903180DE47487E1F504D /* Pods-AutoSelfieLibChallenge_Example-AutoSelfieLibChallenge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoSelfieLibChallenge_Example-AutoSelfieLibChallenge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AutoSelfieLibChallenge_Example-AutoSelfieLibChallenge_Tests/Pods-AutoSelfieLibChallenge_Example-AutoSelfieLibChallenge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +78,14 @@
 				302443ED26839A32004B5467 /* ContentView.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		30B8D7E72684C4A500E83EB1 /* FaceFeedbackGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* RectTests.swift */,
+			);
+			name = FaceFeedbackGenerator;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -123,7 +131,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				30B8D7E72684C4A500E83EB1 /* FaceFeedbackGenerator */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -432,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* RectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
