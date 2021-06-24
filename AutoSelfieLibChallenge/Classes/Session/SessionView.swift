@@ -23,6 +23,8 @@ public class AutoSelfieSessionView: UIView {
     
     public let session = AutoSelfieSession()
     
+    private let targetRectDrawer = TargetRectDrawer()
+    
     /**
      Same as accessing `session.eventHandler`.
      */
@@ -39,6 +41,19 @@ public class AutoSelfieSessionView: UIView {
         layer as! AVCaptureVideoPreviewLayer
     }
     
+    var horizontalTargetPadding: Double = 20
+    
+    var verticalTargetPadding: Double = 80
+    
+    var targetRect: Rect {
+        Rect(
+            x1: Double(frame.minX) + horizontalTargetPadding,
+            y1: Double(frame.minY) + verticalTargetPadding,
+            x2: Double(frame.maxX) - horizontalTargetPadding,
+            y2: Double(frame.maxY) - verticalTargetPadding
+        )
+    }
+    
     // MARK: - Init
     
     public override init(frame: CGRect) {
@@ -51,13 +66,15 @@ public class AutoSelfieSessionView: UIView {
         setup()
     }
     
-    deinit {
-        removeOrientationObserver()
-    }
-    
     private func setup() {
         backgroundColor = Constant.backgroundColor
         addOrientationObserver()
+    }
+    
+    // MARK: - Life Cycle
+    
+    deinit {
+        removeOrientationObserver()
     }
     
     // MARK: - Entry Points
@@ -67,11 +84,14 @@ public class AutoSelfieSessionView: UIView {
      Calls `session.startDetection()` and configures this UIView's CALayer for the camera feed.
      */
     public func startDetection() {
+        session.targetRect = targetRect
         session.startDetection()
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.session = session.cameraCaptureSession
+        
+        targetRectDrawer.draw(rect: targetRect, in: previewLayer)
     }
-    
+
     /**
      Stops the camera and frees its resources. Automatically called when objects of this class are
      deallocated.

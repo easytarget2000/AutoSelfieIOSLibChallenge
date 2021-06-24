@@ -26,6 +26,7 @@ final class MLKitFaceFeedbackGenerator: FaceFeedbackGenerator {
         
     func handle(sampleBuffer: CMSampleBuffer) -> Result<Rect?, Error> {
         let visionImage = VisionImage(buffer: sampleBuffer)
+        visionImage.orientation = .leftMirrored // Raised issue #10.
         let faces: [Face]
         do {
             faces = try faceDetector.results(in: visionImage)

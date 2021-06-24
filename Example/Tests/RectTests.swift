@@ -3,6 +3,15 @@ import XCTest
 
 class RectTests: XCTestCase {
     
+    func testToCG_GivenAny_ReturnsSameDimensions() {
+        let sut = Rect(x1: 20, y1: 25, x2: 100, y2: 200)
+        let result = sut.toCG()
+        XCTAssertEqual(result.minX, 20)
+        XCTAssertEqual(result.minY, 25)
+        XCTAssertEqual(result.width, 80)
+        XCTAssertEqual(result.height, 175)
+    }
+    
     func testIsInside_GivenLargerOther_ReturnsFalse() {
         let sut = Rect(x1: 0, y1: 0, x2: 200, y2: 200)
         let other = Rect(x1: -1, y1: -1, x2: 300, y2: 300)

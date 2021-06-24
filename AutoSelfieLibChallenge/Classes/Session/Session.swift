@@ -11,6 +11,11 @@ public class AutoSelfieSession {
     // MARK: - Values
     
     /**
+     
+     */
+    public var targetRect: Rect?
+    
+    /**
      */
     public var eventHandler: ((AutoSelfieEvent) -> ())?
     
@@ -83,7 +88,11 @@ public class AutoSelfieSession {
         } frameHandler: { [weak self] frameResult in
             switch frameResult {
             case .success(let sampleBuffer):
-                self?.faceFeedbackGenerator.handle(sampleBuffer: sampleBuffer)
+                guard let self = self else { return }
+                let feedbackResult = self.faceFeedbackGenerator.handle(
+                    sampleBuffer: sampleBuffer
+                )
+                self.handleFeedbackResult(feedbackResult, in: sampleBuffer)
             case .failure(let error):
                 Self.logError("startImageSource(): frameResult: \(error)")
             }
@@ -92,6 +101,49 @@ public class AutoSelfieSession {
     
     private func stopImageSource() {
         imageSource.stopFeed()
+    }
+    
+    private func handleFeedbackResult(
+        _ feedbackResult: Result<Rect?, Error>,
+        in sampleBuffer: CMSampleBuffer
+    ) {
+        switch feedbackResult {
+        case .success(let faceRect):
+            handleFeedbackSuccess(faceRect: faceRect, in: sampleBuffer)
+        case .failure(let error):
+            Self.logError(error.localizedDescription)
+        }
+    }
+    
+    private func handleFeedbackSuccess(
+        faceRect: Rect?,
+        in sampleBuffer: CMSampleBuffer
+    ) {
+        guard let targetRect = targetRect else {
+            return
+        }
+        
+        guard let faceRect = faceRect else {
+            return
+        }
+        
+        guard faceRect.isInside(targetRect) else {
+            return
+        }
+        
+        let image: UIImage
+        do {
+            image = try UIImage(sampleBuffer: sampleBuffer)
+        } catch {
+            Self.logError(
+                "handleFeedbackResult(): \(error.localizedDescription)"
+            )
+            return
+        }
+        
+        eventHandlerQueue.async {
+            self.eventHandler?(.imageCapture(image))
+        }
     }
     
     private static func logError(_ message: String) {
