@@ -3,9 +3,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel: ContentViewModel
+    @ObservedObject private var viewModel: ContentViewModel
 
-    let wrapperView: AutoSelfieWrapperView
+    private let wrapperView: AutoSelfieWrapperView
+    
+    init(
+        viewModel: ContentViewModel = ContentViewModel(),
+        wrapperView: AutoSelfieWrapperView = AutoSelfieWrapperView()
+    ) {
+        self.viewModel = viewModel
+        self.wrapperView = wrapperView
+    }
     
     var body: some View {
         ZStack {
@@ -19,14 +27,7 @@ struct ContentView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(
-            viewModel: ContentViewModel(),
-            wrapperView: AutoSelfieWrapperView()
-        )
-    }
-}
+// MARK: - Views
 
 extension ContentView {
     
@@ -44,6 +45,12 @@ extension ContentView {
         Image(uiImage: viewModel.capturedImage)
             .opacity(viewModel.showCapturedImage ? 1 : 0)
     }
+    
+}
+
+// MARK: - Behaviour
+
+extension ContentView {
     
     // Raised issue #9.
     private func requestCameraAccessAndStartDetection() {
@@ -64,8 +71,6 @@ extension ContentView {
             switch event {
             case .imageCapture(let image):
                 self.handleImageCapture(image)
-            default:
-                break
             }
         }
         wrapperView.wrappedView.startDetection()
@@ -78,4 +83,12 @@ extension ContentView {
         viewModel.showCapturedImage = true
     }
     
+}
+
+// MARK: - Preview
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
