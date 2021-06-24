@@ -13,8 +13,8 @@ class RectTests: XCTestCase {
     }
     
     func testIsInside_GivenLargerOther_ReturnsFalse() {
-        let sut = Rect(x1: 0, y1: 0, x2: 200, y2: 200)
-        let other = Rect(x1: -1, y1: -1, x2: 300, y2: 300)
+        let sut = Rect(x1: -1, y1: -1, x2: 300, y2: 300)
+        let other = Rect(x1: 0, y1: 0, x2: 200, y2: 200)
         let result = sut.isInside(other)
         XCTAssertFalse(result)
     }
@@ -27,8 +27,8 @@ class RectTests: XCTestCase {
     }
     
     func testIsInside_GivenSmallerInnerOther_ReturnsTrue() {
-        let sut = Rect(x1: -10, y1: -5, x2: 30, y2: 35)
-        let other = Rect(x1: 0, y1: -1, x2: 29, y2: 34)
+        let sut = Rect(x1: 48, y1: 145, x2: 235, y2: 332)
+        let other = Rect(x1: 20, y1: 80, x2: 268, y2: 376)
         let result = sut.isInside(other)
         XCTAssertTrue(result)
     }

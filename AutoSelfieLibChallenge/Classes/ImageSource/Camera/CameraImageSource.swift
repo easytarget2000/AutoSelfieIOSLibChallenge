@@ -55,6 +55,8 @@ final class CameraImageSource: NSObject, ImageSource {
         
     private var frameHandler: ((Result<UIImage, Swift.Error>) -> ())?
     
+    var viewFinderRect: Rect?
+    
     let captureSession: AVCaptureSession
     
     let captureSessionQueue: DispatchQueue
@@ -236,7 +238,15 @@ extension CameraImageSource: AVCaptureVideoDataOutputSampleBufferDelegate {
             NSLog("ERROR: CameraImageSource: captureOutput(): \(error)")
             return
         }
-        frameHandler?(.success(image))
+        
+        let adjustedImage: UIImage
+        if let viewFinderRect = viewFinderRect {
+            adjustedImage = image.scaleCrop(to: viewFinderRect)
+        } else {
+            adjustedImage = image
+        }
+        
+        frameHandler?(.success(adjustedImage))
     }
     
 }

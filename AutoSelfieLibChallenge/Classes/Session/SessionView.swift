@@ -48,10 +48,10 @@ public class AutoSelfieSessionView: UIView {
     
     var targetRect: Rect {
         Rect(
-            x1: Double(frame.minX) + horizontalTargetPadding,
-            y1: Double(frame.minY) + verticalTargetPadding,
-            x2: Double(frame.maxX) - horizontalTargetPadding,
-            y2: Double(frame.maxY) - verticalTargetPadding
+            x1: Double(bounds.minX) + horizontalTargetPadding,
+            y1: Double(bounds.minY) + verticalTargetPadding,
+            x2: Double(bounds.maxX) - horizontalTargetPadding,
+            y2: Double(bounds.maxY) - verticalTargetPadding
         )
     }
     
@@ -85,6 +85,7 @@ public class AutoSelfieSessionView: UIView {
      Calls `session.startDetection()` and configures this UIView's CALayer for the camera feed.
      */
     public func startDetection() {
+        session.viewFinderRect = Rect.fromCG(bounds)
         session.targetRect = targetRect
         session.startDetection()
         previewLayer.videoGravity = .resizeAspectFill

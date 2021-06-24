@@ -23,7 +23,10 @@ public class AutoSelfieSession {
      To compensate for this, the image will be cropped to match the aspect ratio of `viewFinderRect`.
      If set to `nil`, the image will not be altered.
      */
-    public var viewFinderRect: Rect?
+    public var viewFinderRect: Rect? {
+        get { imageSource.viewFinderRect }
+        set { imageSource.viewFinderRect = newValue }
+    }
     
     /**
      Callbacks generated after calling `startDetection`.
@@ -40,7 +43,7 @@ public class AutoSelfieSession {
         (imageSource as? CameraImageSource)?.captureSession
     }
     
-    private let imageSource: ImageSource
+    private var imageSource: ImageSource
     
     private let faceFeedbackGenerator: FaceFeedbackGenerator
     
@@ -136,7 +139,7 @@ public class AutoSelfieSession {
         guard let faceRect = faceRect else {
             return
         }
-        
+                
         guard faceRect.isInside(targetRect) else {
             return
         }

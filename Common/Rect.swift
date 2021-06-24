@@ -8,6 +8,14 @@ public struct Rect {
     
     public let y2: Double
     
+    var width: Double {
+        x2 - x1
+    }
+    
+    var height: Double {
+        y2 - y1
+    }
+    
     static let zero = Rect(x1: 0, y1: 0, x2: 0, y2: 0)
     
     public func toCG() -> CGRect {
@@ -29,8 +37,8 @@ public struct Rect {
     }
     
     func isInside(_ other: Rect) -> Bool {
-        return x1 <= other.x1 && other.x2 <= x2
-            && y1 <= other.y1 && other.y2 <= y2
+        return other.x1 <= x1 && x2 <= other.x2
+            && other.y1 <= y1 && y2 <= other.y2
     }
     
 }
