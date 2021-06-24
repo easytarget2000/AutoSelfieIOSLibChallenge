@@ -8,6 +8,8 @@ public struct Rect {
     
     public let y2: Double
     
+    static let zero = Rect(x1: 0, y1: 0, x2: 0, y2: 0)
+    
     public func toCG() -> CGRect {
         return CGRect(
             x: CGFloat(x1),

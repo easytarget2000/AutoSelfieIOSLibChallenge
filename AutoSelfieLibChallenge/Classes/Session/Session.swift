@@ -11,11 +11,22 @@ public class AutoSelfieSession {
     // MARK: - Values
     
     /**
-     
+     Defines the size and location within the camera image, in which the recognition is searching for a face to
+     decide when to capture an image. The coordinates of this rectangle are in relation to the camera image,
+     which in turn may be aligned to `viewFinderRect`. If set to `nil`, no images will be captured.
      */
     public var targetRect: Rect?
     
     /**
+     Defines the aspect ratio of the output image, usually set to the _bounds_ of the UIView that is displaying
+     the camera feed. The camera often delivers images with an aspect ratio that is different to the display.
+     To compensate for this, the image will be cropped to match the aspect ratio of `viewFinderRect`.
+     If set to `nil`, the image will not be altered.
+     */
+    public var viewFinderRect: Rect?
+    
+    /**
+     Callbacks generated after calling `startDetection`.
      */
     public var eventHandler: ((AutoSelfieEvent) -> ())?
     
@@ -126,9 +137,9 @@ public class AutoSelfieSession {
             return
         }
         
-//        guard faceRect.isInside(targetRect) else {
-//            return
-//        }
+        guard faceRect.isInside(targetRect) else {
+            return
+        }
         
         eventHandlerQueue.async {
             self.eventHandler?(.imageCapture(image))
