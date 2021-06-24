@@ -6,7 +6,7 @@ target 'AutoSelfieLibChallenge_Example' do
   pod 'AutoSelfieLibChallenge', :path => '../'
 
   target 'AutoSelfieLibChallenge_Tests' do
-    inherit! :search_paths
+    # inherit! :search_paths
   end
   
 end
