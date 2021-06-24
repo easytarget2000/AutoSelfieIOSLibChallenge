@@ -87,12 +87,11 @@ public class AutoSelfieSession {
             }
         } frameHandler: { [weak self] frameResult in
             switch frameResult {
-            case .success(let sampleBuffer):
+            case .success(let image):
                 guard let self = self else { return }
-                let feedbackResult = self.faceFeedbackGenerator.handle(
-                    sampleBuffer: sampleBuffer
-                )
-                self.handleFeedbackResult(feedbackResult, in: sampleBuffer)
+                let feedbackResult
+                    = self.faceFeedbackGenerator.handle(image: image)
+                self.handleFeedbackResult(feedbackResult, in: image)
             case .failure(let error):
                 Self.logError("startImageSource(): frameResult: \(error)")
             }
@@ -105,11 +104,11 @@ public class AutoSelfieSession {
     
     private func handleFeedbackResult(
         _ feedbackResult: Result<Rect?, Error>,
-        in sampleBuffer: CMSampleBuffer
+        in image: UIImage
     ) {
         switch feedbackResult {
         case .success(let faceRect):
-            handleFeedbackSuccess(faceRect: faceRect, in: sampleBuffer)
+            handleFeedbackSuccess(faceRect: faceRect, in: image)
         case .failure(let error):
             Self.logError(error.localizedDescription)
         }
@@ -117,7 +116,7 @@ public class AutoSelfieSession {
     
     private func handleFeedbackSuccess(
         faceRect: Rect?,
-        in sampleBuffer: CMSampleBuffer
+        in image: UIImage
     ) {
         guard let targetRect = targetRect else {
             return
@@ -127,19 +126,9 @@ public class AutoSelfieSession {
             return
         }
         
-        guard faceRect.isInside(targetRect) else {
-            return
-        }
-        
-        let image: UIImage
-        do {
-            image = try UIImage(sampleBuffer: sampleBuffer)
-        } catch {
-            Self.logError(
-                "handleFeedbackResult(): \(error.localizedDescription)"
-            )
-            return
-        }
+//        guard faceRect.isInside(targetRect) else {
+//            return
+//        }
         
         eventHandlerQueue.async {
             self.eventHandler?(.imageCapture(image))

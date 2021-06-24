@@ -53,7 +53,7 @@ final class CameraImageSource: NSObject, ImageSource {
         AVCaptureDevice.authorizationStatus(for: .video)
     }
         
-    private var frameHandler: ((Result<CMSampleBuffer, Swift.Error>) -> ())?
+    private var frameHandler: ((Result<UIImage, Swift.Error>) -> ())?
     
     let captureSession: AVCaptureSession
     
@@ -87,7 +87,7 @@ final class CameraImageSource: NSObject, ImageSource {
     
     func startFeed(
         completionHandler: ((Result<Bool, Swift.Error>) -> ())? = nil,
-        frameHandler: ((Result<CMSampleBuffer, Swift.Error>) -> ())?
+        frameHandler: ((Result<UIImage, Swift.Error>) -> ())?
     ) {
         guard !feedStarted else {
             completionHandler?(.success(false))
@@ -229,7 +229,14 @@ extension CameraImageSource: AVCaptureVideoDataOutputSampleBufferDelegate {
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
-        frameHandler?(.success(sampleBuffer))
+        let image: UIImage
+        do {
+            image = try UIImage(sampleBuffer: sampleBuffer)
+        } catch {
+            NSLog("ERROR: CameraImageSource: captureOutput(): \(error)")
+            return
+        }
+        frameHandler?(.success(image))
     }
     
 }

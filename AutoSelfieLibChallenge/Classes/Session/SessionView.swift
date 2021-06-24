@@ -29,7 +29,8 @@ public class AutoSelfieSessionView: UIView {
      Same as accessing `session.eventHandler`.
      */
     public var eventHandler: ((AutoSelfieEvent) -> ())? {
-        session.eventHandler
+        get { session.eventHandler }
+        set { session.eventHandler = newValue }
     }
     
     public override class var layerClass: AnyClass {

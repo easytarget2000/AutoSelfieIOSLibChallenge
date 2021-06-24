@@ -1,7 +1,7 @@
-import CoreMedia.CMSampleBuffer
+import UIKit.UIImage
 
 protocol FaceFeedbackGenerator {
     
-    func handle(sampleBuffer: CMSampleBuffer) -> Result<Rect?, Error>
+    func handle(image: UIImage) -> Result<Rect?, Error>
     
 }

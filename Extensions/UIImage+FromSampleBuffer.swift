@@ -22,7 +22,7 @@ extension UIImage {
         
         let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
         // Raised issue #10.
-        let rotatedCIImage = ciImage.oriented(.up)
+        let rotatedCIImage = ciImage.oriented(.leftMirrored)
         
         guard let cgImage = ciContext.createCGImage(
                 rotatedCIImage,

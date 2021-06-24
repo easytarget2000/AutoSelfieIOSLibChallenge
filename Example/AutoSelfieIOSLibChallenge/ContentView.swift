@@ -3,12 +3,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject var viewModel: ContentViewModel
+
     let wrapperView: AutoSelfieWrapperView
     
     var body: some View {
-        VStack {
-            selfieView
-            startButton
+        ZStack {
+            VStack {
+                selfieView
+                startButton
+            }
+            resultView
         }
     }
     
@@ -16,7 +21,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(wrapperView: AutoSelfieWrapperView())
+        ContentView(
+            viewModel: ContentViewModel(),
+            wrapperView: AutoSelfieWrapperView()
+        )
     }
 }
 
@@ -30,6 +38,11 @@ extension ContentView {
         Button("Start") {
             requestCameraAccessAndStartDetection()
         }.padding()
+    }
+    
+    private var resultView: some View {
+        Image(uiImage: viewModel.capturedImage)
+            .opacity(viewModel.showCapturedImage ? 1 : 0)
     }
     
     // Raised issue #9.
@@ -47,6 +60,22 @@ extension ContentView {
     }
     
     private func startDetection() {
+        wrapperView.wrappedView.eventHandler = { event in
+            switch event {
+            case .imageCapture(let image):
+                self.handleImageCapture(image)
+            default:
+                break
+            }
+        }
         wrapperView.wrappedView.startDetection()
     }
+    
+    private func handleImageCapture(_ image: UIImage) {
+        wrapperView.wrappedView.stopDetection()
+
+        viewModel.capturedImage = image
+        viewModel.showCapturedImage = true
+    }
+    
 }
