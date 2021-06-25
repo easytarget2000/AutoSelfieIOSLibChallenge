@@ -13,16 +13,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-AutoSelfieIOSLibChallenge is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Since this is purely an exercise, AutoSelfieIOSLibChallenge is _not_ available through [CocoaPods](https://cocoapods.org). Instead, it is required to clone the repo and add a path reference to its root directory to your project's Podfile as such:
 
 ```ruby
-pod 'AutoSelfieIOSLibChallenge'
+pod 'AutoSelfieIOSLibChallenge', :path => '~/Repositories/AutoSelfieIOSLibChallenge'
 ```
+Please do not forget to replace the path with the actual path on your system. Cocoapods accepts relative paths.
 
 ## Author
 
-easytarget2000, michel@easy-target.eu
+Michel Sievers, michel@easy-target.eu
 
 ## License
 
