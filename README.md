@@ -1,9 +1,6 @@
 # Auto Selfie - iOS Library Coding Challenge
 
 [![CI Status](https://img.shields.io/travis/easytarget2000/AutoSelfieIOSLibChallenge.svg?style=flat)](https://travis-ci.org/easytarget2000/AutoSelfieIOSLibChallenge)
-[![Version](https://img.shields.io/cocoapods/v/AutoSelfieIOSLibChallenge.svg?style=flat)](https://cocoapods.org/pods/AutoSelfieIOSLibChallenge)
-[![License](https://img.shields.io/cocoapods/l/AutoSelfieIOSLibChallenge.svg?style=flat)](https://cocoapods.org/pods/AutoSelfieIOSLibChallenge)
-[![Platform](https://img.shields.io/cocoapods/p/AutoSelfieIOSLibChallenge.svg?style=flat)](https://cocoapods.org/pods/AutoSelfieIOSLibChallenge)
 
 ## Example
 
